@@ -33,7 +33,7 @@ export class UserService {
   }
 
   logout(): void {
-    this.purgeAuth();
+    void this.purgeAuth();
     void this.router.navigateByUrl('/');
   }
 
