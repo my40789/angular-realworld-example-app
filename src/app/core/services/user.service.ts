@@ -34,7 +34,7 @@ export class UserService {
 
   logout(): void {
     this.purgeAuth();
-    void this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/');
   }
 
   getCurrentUser(): Observable<{ user: User }> {
